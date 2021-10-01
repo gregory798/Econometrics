@@ -1,0 +1,13 @@
+Identifiant;taille;poids;genre;note;Region;Nb_frere;Nb_soeur
+5;155;45;Homme;A;Aquitaine;1;0
+6;145;50;Femme;C;IDF;0;0
+7;170;55;Homme;B;PACA;2;1
+8;180;60;Femme;A;Limousin;0;0
+9;190;65;Homme;C;Picardie;1;0
+10;178;70;Femme;B;Bretagne ;1;1
+11;167;75;Homme;A;Bretagne ;2;0
+12;149;45;Femme;C;PACA;0;0
+13;156;85;Homme;B;IDF;1;0
+14;160;90;Femme;A;Limousin;0;1
+15;176;95;Homme;C;Aquitaine;1;0
+16;176;100;Femme;B;IDF;0;2
