@@ -5,6 +5,10 @@
 # 3)a)b)
 
 
+
+
+
+
 # c) Créer des données :
 
 
@@ -17,6 +21,26 @@
 #                             |nom.variable2=c(valeurs),row.names=c(valeurs))
 
 
+
+
+# Concat
+for (i in seq(1,5, by=1)){
+  print(paste("Hello World ",i))
+}
+
+u = c(1,2,3,4,5)
+
+u
+
+str(u)
+
+
+v = c(5:10)
+
+v
+
+str(v)
+
 # Pour supprimer un objet: 
 # rm(nom)
 
@@ -28,8 +52,43 @@ vente<-data.frame(produit=c("robe","pantalon","chaussures"),
                   volume=c(4,5,7),
                   row.names=c("client1","client2","client3"))
 
+vente$cout = vente$prix * vente$volume
+
+vente_total = sum(vente$cout)
+
+vente_total
 
 vente
+
+#  Si on veut un df qui a juste Produit et Prix :
+
+
+vv = vente[c(1,2)]
+
+vv
+
+# Same mais pour les lignes :
+
+ww = vente[1:2,]
+
+ww
+
+
+vente$produit[1] = "robe rouge"
+
+vente
+
+vente$produit[1] = "robe"
+
+
+vente
+
+
+pi = 22/7
+
+pi
+
+round(pi,2)
 
 # d) Importer des données : (import Dataset) ou :
 
@@ -43,7 +102,7 @@ read.csv2(file.choose())
 
 #####################################################
 
-
+summary(Initiation)
 
 
 # e) Appariement de données : Combiner 2 tables
@@ -136,7 +195,7 @@ hist(Initiation$poids, main = "Poids des étudiants",
 
 table(Initiation$genre)
 
-plot(Initiation$poids,Initiation$taille,main = "Poids et taille des é tudiants",
+plot(Initiation$poids,Initiation$taille,main = "Poids et taille des étudiants",
      xlab = "Poids", ylab = "taille") 
 
 
@@ -167,5 +226,3 @@ summary(RegModel.1)
 
 # 7)
 # 8)
-
-
